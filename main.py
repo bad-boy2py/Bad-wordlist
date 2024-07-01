@@ -196,7 +196,7 @@ while len(wordlist) < num_lines:
     wordlist.add(combination)
 
 # Creating wordlist file
-wordlist_filename = f"{save_path}\\bad_wordlist.txt"
+wordlist_filename = f"{save_path}/bad_wordlist.txt"
 with open(wordlist_filename, 'w') as f:
     for item in list(wordlist)[:num_lines]:
         f.write(f"{item}\n")
